@@ -1,8 +1,3 @@
- ---
- layout: post
- title: jekyll 教程入门
- ---
-
 
 ```text
 listen              1935;
