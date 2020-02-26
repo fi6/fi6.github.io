@@ -3,11 +3,19 @@ When you are a root user:
 
 
 ```bash
-useradd ???
-passwd ???
-echo -e "\n??? ALL=(ALL) ALL\n" >> /etc/sudoers
+useradd fi
+passwd fi
+echo -e "\nfi ALL=(ALL) NOPASSWD: ALL\n" >> /etc/sudoers
+```
+
+Or if you just wan to use password for more safety:
+```bash
+echo -e "\nfi ALL=(ALL) ALL\n" >> /etc/sudoers
+```
+
+```bash
 tail -3 /etc/sudoers
-sudo su -l ??
+sudo su -l fi
 mkdir .ssh && chmod 700 .ssh && cd .ssh
 nano authorized_keys
 chmod 600 authorized_keys
